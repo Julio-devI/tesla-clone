@@ -17,7 +17,7 @@ const ModelsWrapper: React.FC = ({ children }) => {
         setRegisteredModels(state => state.filter(model => model.modelName != modelName))
     }, [])
 
-    const getModelByName = useCallback(() => {
+    const getModelByName = useCallback((modelName: string) => {
 
     }, [])
 
