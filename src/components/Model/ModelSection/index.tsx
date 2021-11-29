@@ -23,7 +23,7 @@ const ModelSection: React.FC<Props> = ({
         if (sectionRef.current) {
             registerModel({ modelName, overlayNode, sectionRef })
         }
-    }, [])
+    }, [modelName, overlayNode, registerModel])
 
     return <Container ref={sectionRef} {...props}>{children}</Container>
 }
